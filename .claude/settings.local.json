@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Thinkpad\\\\Desktop\\\\Projetos\\\\CopaIA-api\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Thinkpad\\\\Desktop\\\\Projetos\\\\CopaIA-api\" -Recurse | ForEach-Object { $_.FullName })",
+      "Bash(./mvnw.cmd compile *)",
+      "Bash(./mvnw.cmd test *)"
+    ]
+  }
+}
